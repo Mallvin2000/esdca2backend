@@ -5,7 +5,7 @@ const config = require('./config');
 
 const pool = mysql.createPool({
         connectionLimit: 100,
-        host: 'localhost',
+        host: 'localhost',//replace with RDS
         user: config.databaseUserName,
         password: config.databasePassword,
         database: config.databaseName,
